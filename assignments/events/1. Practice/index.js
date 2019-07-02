@@ -11,7 +11,7 @@ var section2 = document.querySelectorAll(".second");
 //Select a list item with a class of third, but only the list item inside of the ol tag.
 
 var file = document.querySelector("ol");
-console.log(file)
+
 
 //Give the section with an id of container the text "Hello!".
 

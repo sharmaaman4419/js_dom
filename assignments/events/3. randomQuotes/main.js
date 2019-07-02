@@ -2,7 +2,12 @@ var quotes;
 
 // Write your code here
 
-
+var button = document.querySelector("button");
+function myfunction(event) {
+    if (event.keyCode == 32) 
+    
+}
+button.addEventListener("keyup", myfunction)
 
 quotes = [
     {
