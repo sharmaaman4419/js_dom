@@ -6,13 +6,22 @@
   </head>
   <body>
     <h1>About Me</h1>
-
     <ul>
       <li>Nickname: <span id="nickname"></span></li>
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
     <script>
+      var styles = document.body;
+      styles.style.fontFamily = "Arial, sans-serif"
+      var nodes = document.querySelector("ul");
+      nodes.querySelectorAll("li")[0].textContent = "YOURS NAME";
+      nodes.querySelectorAll("li")[1].textContent = "NON FAVOURITES";
+      nodes.querySelectorAll("li")[2].textContent = "DROPDOWN";
+      var doc = document.querySelectorAll("li");
+      doc.forEach(value => value.classList.add("itemlist"));
+      var newElemnt = document.createElement("img");
+      document.body.appendChild(newElemnt);
     </script>
   </body>
 </html>
