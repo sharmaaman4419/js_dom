@@ -2,14 +2,15 @@ var quotes;
 
 // Write your code here
 
-var button = document.querySelector("button");
-function myfunction(event) {
-    if (event.keyCode == 32) 
-    
+var button = document.querySelector("#button");
+function myfunction(event,quotes) {
+    if (event.keyCode == 32) {
+    console.log(quotes[Math.floor(Math.random()*quotes.length)]);
+    }
 }
 button.addEventListener("keyup", myfunction)
 
-quotes = [
+ quotes = [
     {
         "quoteAuthor": "Thomas Edison",
         "quoteText": "Genius is one percent inspiration and ninety-nine percent perspiration."
