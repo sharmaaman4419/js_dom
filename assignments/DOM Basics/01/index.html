@@ -7,10 +7,28 @@
     <title>DOM Basics</title>
   </head>
   <body>
-    <body>
-      <h1>Document Object Model</h1>
+      <h1 class="header">Document Object Model</h1>
     <script>
       // your code goes here
+      let x = document.createElement('p');
+      x.textContent = "hello javascript";
+      x.innerHTML ="I LOVE <strong>JAVASCRIPT</strong>"
+      var ul1 = document.createElement("ul");
+      var li1 = document.createElement("li");
+      li1.textContent = "buy grocries";
+      var li2 = document.createElement("li");
+      li2.textContent = "feed the cat";
+      var li3 = document.createElement("li");
+      li3.textContent = "Do laundary";
+      var li4 = document.createElement("li");
+      ul1.appendChild(li1);
+      ul1.appendChild(li2);
+      ul1.appendChild(li3);
+      ul1.appendChild(li4);
+      ul1.removeChild(li4);
+      console.log(ul1);
     </script>
   </body>
 </html>
+
+<!-- `I love <strong>Javascript</strong>`; -->
